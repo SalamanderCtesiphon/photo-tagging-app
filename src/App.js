@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer'
@@ -32,7 +31,11 @@ function App() {
       <Header/>
       <div className='backgroundImage'>
         {gridSquares.map((gridSquare) => {
-          return <GridSquare className='grid' gridSquares={gridSquare}/>
+          return <GridSquare 
+                    key={gridSquare.id} 
+                    className='grid' 
+                    gridSquares={gridSquare}
+                    />
         })}
       </div>
       <Footer />
