@@ -1,5 +1,4 @@
 import './App.css';
-import background from "./images/mainImage.png"
 
 
 // Import the functions you need from the SDKs you need
@@ -23,7 +22,7 @@ const app = initializeApp(firebaseConfig);
 function App() {
   return (
     <div className="App">
-      <div style={{backgroundImage: `url("${background}")`}}></div>
+      <div className='backgroundImage'>what the fuck?</div>
     </div>
   );
 }
