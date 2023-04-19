@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import GridSquare from './components/GridSquare';
+import gridSquares from './data/GridSquares';
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -24,23 +25,11 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-function App() {
-  const [gridSquares, setGridSquares] = useState([])
-
-  function makeDivs() {
-    for (let i = 0; i < 945; i++) {
-      const id = i
-      const newGridSquare = {id}
-
-      gridSquares.push(newGridSquare)
-      setGridSquares([gridSquares])
-    }
-    return gridSquares
-  }
+function App() { 
   
   return (
     <div className="App">
-      <Header makeDivs={makeDivs}/>
+      <Header/>
       <div className='backgroundImage'>
         {gridSquares.map((gridSquare) => {
           return <GridSquare className='grid' gridSquares={gridSquare}/>
