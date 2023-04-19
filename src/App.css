@@ -17,9 +17,18 @@
   background-image: url(images/mainImage.png);
   height: 100vh;
   width: auto;
+  display: grid;
+  grid-template-columns: repeat(100, 1fr);
+  grid-template-rows: repeat(100, 1fr);
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+.grid {
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
 }

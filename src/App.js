@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import EmptyDiv from './components/EmptyDiv';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -22,10 +23,19 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 function App() {
+
+  function makeDivs() {
+    const divArr = []
+      for (let i = 0; i < 2300; i++) {
+      divArr.push(<EmptyDiv key={i}/>)
+    }
+    return divArr
+  }
+
   return (
     <div className="App">
       <Header />
-      <div className='backgroundImage'>what the fuck?</div>
+      <div className='backgroundImage'>{makeDivs()}</div>
       <Footer />
     </div>
   );
