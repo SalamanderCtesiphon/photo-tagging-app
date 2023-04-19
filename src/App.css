@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .App-logo {
@@ -13,12 +15,20 @@
   }
 }
 
+.header {
+  height: 5vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .backgroundImage {
   background-image: url(images/mainImage.png);
-  height: 100vh;
-  width: auto;
+  height: 93vh;
+  width: 100vw;
   display: grid;
-  grid-template-columns: repeat(100, 1fr);
+  grid-template-columns: repeat(45, 1fr);
   grid-template-rows: repeat(100, 1fr);
 }
 
@@ -28,10 +38,19 @@ a {
 }
 
 .grid {
+  border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
 .grid:hover {
   background-color: rgba(0, 0, 0, 0.494);
+}
+
+.footer {
+  height: 2vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
