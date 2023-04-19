@@ -27,7 +27,7 @@ function App() {
   function makeDivs() {
     const divArr = []
       for (let i = 0; i < 2300; i++) {
-      divArr.push(<EmptyDiv key={i}/>)
+      divArr.push(<EmptyDiv key={i} />)
     }
     return divArr
   }

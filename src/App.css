@@ -28,7 +28,10 @@ a {
 }
 
 .grid {
-  border: 1px solid black;
   height: 40px;
   width: 40px;
+}
+
+.grid:hover {
+  background-color: rgba(0, 0, 0, 0.494);
 }
