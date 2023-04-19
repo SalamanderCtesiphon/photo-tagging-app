@@ -1,4 +1,5 @@
 import './App.css';
+import Header from './components/Header';
 
 
 // Import the functions you need from the SDKs you need
@@ -22,6 +23,7 @@ const app = initializeApp(firebaseConfig);
 function App() {
   return (
     <div className="App">
+      <Header />
       <div className='backgroundImage'>what the fuck?</div>
     </div>
   );
