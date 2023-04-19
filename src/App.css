@@ -18,3 +18,8 @@
   height: 100vh;
   width: auto;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}

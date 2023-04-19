@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './components/Header';
+import Footer from './components/Footer'
 
 
 // Import the functions you need from the SDKs you need
@@ -25,6 +26,7 @@ function App() {
     <div className="App">
       <Header />
       <div className='backgroundImage'>what the fuck?</div>
+      <Footer />
     </div>
   );
 }
