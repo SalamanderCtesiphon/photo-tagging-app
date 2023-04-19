@@ -13,3 +13,8 @@
   }
 }
 
+.backgroundImage {
+  background-image: url(images/mainImage.png);
+  height: 100vh;
+  width: auto;
+}
