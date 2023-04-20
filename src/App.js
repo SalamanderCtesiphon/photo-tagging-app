@@ -30,11 +30,11 @@ function App() {
     <div className="App">
       <Header/>
       <div className='backgroundImage'>
-        {gridSquares.map((gridSquare) => {
+        {gridSquares.map((item) => {
           return <GridSquare 
-                    key={gridSquare.id} 
+                    key={item.id} 
                     className='grid' 
-                    gridSquares={gridSquare}
+                    item={item}
                     />
         })}
       </div>
