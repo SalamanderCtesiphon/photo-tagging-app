@@ -55,6 +55,8 @@ a {
   position: absolute;
   top: 440px;
   right: 1025px;
+  cursor: pointer;
+ /*  visibility: hidden; */
 }
 
 .footer {
