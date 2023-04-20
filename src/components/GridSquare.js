@@ -9,6 +9,7 @@ function GridSquare(props) {
       key={gridSquare.id} 
       id={gridSquare.id} 
       className='grid'
+      onClick={() => console.log(gridSquare.item.id)}
       >
         {gridSquare.id}
       </div>
