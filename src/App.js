@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import { initializeApp } from "firebase/app";
 import GridSquare from './components/GridSquare';
 import gridSquares from './data/GridSquares';
+import SelectionList from './components/SelectionList';
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -38,6 +39,7 @@ function App() {
                     />
         })}
         <div id='pennsylvester'></div>
+        <SelectionList />
       </div>
       <Footer />
     </div>
