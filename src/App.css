@@ -44,43 +44,51 @@ a {
   width: 40px;
 }
 
+
+
 #pennsylvester {
   height: 60px;
   width: 60px;
-  border-radius: 50%;
-  border: 1px solid white;
-  background-color: rgba(0, 0, 0, 0.285);
   position: absolute;
   top: 440px;
   right: 1025px;
   cursor: pointer;
- /*  visibility: hidden; */
+}
+
+#pennsylvester:hover {
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.285);
 }
 
 #ghost-in-a-jar {
   height: 60px;
   width: 60px;
-  border-radius: 50%;
-  border: 1px solid white;
-  background-color: rgba(0, 0, 0, 0.285);
   position: absolute;
   top: 600px;
   right: 1025px;
   cursor: pointer;
- /*  visibility: hidden; */
+}
+
+#ghost-in-a-jar:hover {
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.285);
 }
 
 #baby-wizard {
   height: 80px;
   width: 80px;
-  border-radius: 50%;
-  border: 1px solid white;
-  background-color: rgba(0, 0, 0, 0.285);
   position: absolute;
   top: 590px;
   right: 1350px;
   cursor: pointer;
- /*  visibility: hidden; */
+}
+
+#baby-wizard:hover {
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.285);
 }
 
 .drop-down {
@@ -89,6 +97,7 @@ a {
   right: 500px;
   background-color: white;
   display: flex;
+  visibility: hidden;
 }
 
 .image-card {

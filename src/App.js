@@ -38,7 +38,7 @@ function App() {
                     item={item}
                     />
         })}
-        <div id='pennsylvester'></div>
+        <div id='pennsylvester' onClick={() => console.log('hi')}></div>
         <div id='baby-wizard'></div>
         <div id='ghost-in-a-jar'></div>
         <SelectionList />
