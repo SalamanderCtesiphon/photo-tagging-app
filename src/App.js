@@ -26,6 +26,11 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 function App() { 
+
+  function showDropDown() {
+    const drop = document.getElementById('drop')
+    drop.style.visibility = 'visible'
+  }
   
   return (
     <div className="App">
@@ -38,9 +43,9 @@ function App() {
                     item={item}
                     />
         })}
-        <div id='pennsylvester' onClick={() => console.log('hi')}></div>
-        <div id='baby-wizard'></div>
-        <div id='ghost-in-a-jar'></div>
+        <div id='pennsylvester' onClick={() => showDropDown()}></div>
+        <div id='baby-wizard' onClick={() => showDropDown()}></div>
+        <div id='ghost-in-a-jar' onClick={() => showDropDown()}></div>
         <SelectionList />
       </div>
       <Footer />
