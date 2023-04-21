@@ -39,6 +39,8 @@ function App() {
                     />
         })}
         <div id='pennsylvester'></div>
+        <div id='baby-wizard'></div>
+        <div id='ghost-in-a-jar'></div>
         <SelectionList />
       </div>
       <Footer />
