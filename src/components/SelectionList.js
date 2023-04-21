@@ -1,12 +1,19 @@
 import React from 'react'
-import babyWizard from '../images/babyWizard.png'
-import ghostInAJar from '../images/ghostInAJar.png'
-import pennsylvester from '../images/pennsylvester.png'
+import canidates from '../data/PossibilitiesArray'
+
 
 function SelectionList() {
   return (
     <div className='drop-down'>
-      <div className='image-card'>
+      { canidates.map((canidate) => {
+        return (
+          <div className='image-card'>
+            <img src={canidate.image} alt={`${canidate.title}`}></img>
+            <p>{canidate.title}</p>
+          </div>
+        )
+      })}
+      {/* <div className='image-card'>
         <img src={babyWizard} alt='baby wizard'></img>
         <p>Baby Wizard</p>
       </div>
@@ -17,7 +24,7 @@ function SelectionList() {
       <div className='image-card'>
         <img src={pennsylvester} alt='pennsylvester'></img>
         <p>Pennsylvester</p>
-      </div>
+      </div> */}
     </div>
   )
 }
