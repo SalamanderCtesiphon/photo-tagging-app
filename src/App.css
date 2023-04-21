@@ -66,6 +66,7 @@ a {
   right: 1025px;
   background-color: white;
   padding: 5px;
+  display: flex;
 }
 
 .footer {
