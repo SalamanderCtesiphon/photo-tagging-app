@@ -27,7 +27,7 @@ const app = initializeApp(firebaseConfig);
 
 function App() { 
 
-  function showDropDown() {
+  function showDropDown(id) {
     const drop = document.getElementById('drop')
     drop.style.visibility = 'visible'
   }
