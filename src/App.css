@@ -21,6 +21,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgb(19, 19, 74);
+  color: white;
 }
 
 .backgroundImage {
@@ -40,10 +42,6 @@ a {
 .grid {
   height: 40px;
   width: 40px;
-}
-
-.grid:hover {
-  background-color: rgba(0, 0, 0, 0.494);
 }
 
 #pennsylvester {
@@ -99,10 +97,20 @@ a {
   cursor: pointer;
 }
 
+.image-card:hover {
+  background-color: rgba(0, 0, 0, 0.222);
+}
+
 .footer {
   height: 2vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgb(19, 19, 74);
+  color: white;
+}
+
+a {
+  color: white;
 }
